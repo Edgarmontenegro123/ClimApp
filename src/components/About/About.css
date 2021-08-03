@@ -23,3 +23,8 @@
     color: #16202A;
     margin-top: 10rem
 }
+@media(max-width: 560px){
+    .text{
+        font-size: 1.5rem
+    }
+  }
