@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 40vw;
+    height: 70vh;
+    box-shadow: #16202A 2px 4px 6px 0px
+}
+.text{
+    margin: auto;
+    color: whitesmoke;
+    font-size: 2rem
+}
+.link{
+    color: darkgrey;
+    text-decoration: none
+}
+.link:hover{
+    text-decoration: none;
+    color: #F8B62C
+}
+.footer{
+    color: #16202A;
+    margin-top: 10rem
+}
