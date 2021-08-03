@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .App{
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   background: url('../img/fondo4.jpg');
   background-repeat: no-repeat;

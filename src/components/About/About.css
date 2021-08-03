@@ -21,10 +21,17 @@
 }
 .footer{
     color: #16202A;
-    margin-top: 10rem
+    margin-top: 1rem
 }
 @media(max-width: 560px){
+    .container{
+        width: 90vw;
+        margin-top: 1rem;
+    }
     .text{
         font-size: 1.5rem
+    }
+    .footer{
+        margin-top: 1rem;
     }
   }
