@@ -12,7 +12,7 @@ export default function About(){
                 <span className = 'text'>Sígueme en <a href = 'https://www.linkedin.com/in/edgarmontenegro/' target = '_blank' rel = 'noopener noreferrer' className = 'link'> 
                     LinkedIn <i className = "fab fa-linkedin-in"></i></a>  
                 </span>
-                <p className = 'text'>Mi Currículum Vitae <a href = 'https://www.canva.com/design/DAElFbGgReo/w5KZpX2OLMFUX0hXbxV56w/view?utm_content=DAElFbGgReo&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink' 
+                <p className = 'text'>Mi Currículum Vitae <a href = 'https://edgarmontenegro123.github.io/MyCurriculumVitae/' 
                                                         target = '_blank' rel = 'noopener noreferrer' className = 'link'> Acá!</a>
                 </p>
                 <p className = 'text'>Conoce el código 
