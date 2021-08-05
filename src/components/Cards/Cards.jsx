@@ -1,13 +1,14 @@
 import React from 'react'
 import Card from '../Card/Card'
+import Clock from '../Clock/Clock'
 import '../Cards/Cards.css'
 
 export default function Cards({cities, onClose, id}){
   
   return (
     <div className = 'cards'>
-      {console.log(cities)}
-      {cities.map(c => <Card
+      {cities.length === 0 ? <Clock/>:
+      cities.map(c => <Card
           id = {c.id}
           key = {c.id}
           max = {c.max}
