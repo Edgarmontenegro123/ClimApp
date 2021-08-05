@@ -1,14 +1,15 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Ciudad.css'
 
 export default function Ciudad({city}){
-  var sunrise = new Date(city.amanecer * 1000)
-  var sunset = new Date(city.anochecer * 1000)
+  let sunrise = new Date(city.amanecer * 1000)
+  let sunset = new Date(city.anochecer * 1000)
 
   return(
     <div className = 'card_container'>
         <div className = 'container'>
-          <h2 className = 'titulo'>{city.name}</h2>
+          <Link to = '/' className = 'link'><h2 className = 'titulo'>{city.name}</h2></Link>
           <div className = 'info'>
             <div><b>Temperatura:</b> {city.temp} ºC</div>
             <div><b>Clima:</b> {city.weather}</div>
@@ -17,10 +18,10 @@ export default function Ciudad({city}){
             <div><b>Latitud:</b> {city.latitud}º</div>
             <div><b>Longitud:</b> {city.longitud}º</div>
             <div>
-            <b>Amanece:</b> {`${sunrise.getHours()}:${sunrise.getMinutes()} h`} UTC
+            <b>Amanece:</b> {`${sunrise.getHours()}:${(sunrise.getMinutes()<10)? '0' + sunrise.getMinutes() : sunrise.getMinutes()} h`} UTC
             </div>
             <div>
-            <b>Anochece:</b> {`${sunset.getHours()}:${sunset.getMinutes()} h`} UTC
+            <b>Anochece:</b> {`${sunset.getHours()}:${(sunset.getMinutes()<10)? '0' + sunset.getMinutes() : sunset.getMinutes()} h`} UTC
             </div>
             <div>
               <img

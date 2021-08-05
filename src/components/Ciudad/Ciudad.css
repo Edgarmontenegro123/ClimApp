@@ -12,6 +12,12 @@
   font-size: 2rem;
   text-shadow:#16202A 2px 3px 3px
 }
+.titulo:hover{
+  color: #F8B62C
+}
 .iconito {
   filter:drop-shadow(12px 10px 7px #16202A)
+}
+.link{
+  text-decoration: none;
 }
