@@ -44,8 +44,8 @@ export default function Clock() {
             dateTime.hours = 12
         }
     
-        if(dateTime.minutes < 10){dateTime.minutes = '0' + dateTime.minutes}
-        if(dateTime.seconds < 10){dateTime.seconds = '0' + dateTime.seconds}
+        if(dateTime.minutes < 10){dateTime.minutes = `0${dateTime.minutes}`}
+        if(dateTime.seconds < 10){dateTime.seconds = `0${dateTime.seconds}`}
 
   return (
         <div className = 'wrap'>
