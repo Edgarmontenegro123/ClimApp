@@ -4,6 +4,7 @@ import Nav from '../components/NavBar/Nav'
 import Cards from '../components/Cards/Cards'
 import About from '../components/About/About'
 import Ciudad from '../components/Ciudad/Ciudad'
+import swal from 'sweetalert'
 import './App.css'
 
 const apiKey = process.env.REACT_APP_APIKEY
@@ -40,11 +41,24 @@ export default function App(){
           setCities(oldCities => [...oldCities, ciudad])
         } 
         else{
-          alert('Ciudad no encontrada')
+          swal({
+            title: 'ClimApp',
+            text: 'Ciudad no encontrada',
+            icon: 'error',
+            button: 'Aceptar',
+            timer: '2500'
+          })
         }
       } 
       else{
-        alert('Esa ciudad ya fue encontrada. Intente con una diferente.')
+        swal('Esa ciudad ya fue encontrada. Intente con una diferente.')
+        swal({
+          title: 'ClimApp',
+          text: 'Esta ciudad ya fue encontrada. Intenta con otra!',
+          icon: 'warning',
+          button: 'Aceptar',
+          timer: '2500'
+        })
       }    
     })
   }
