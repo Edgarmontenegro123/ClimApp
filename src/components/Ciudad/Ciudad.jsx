@@ -18,10 +18,10 @@ export default function Ciudad({city}){
             <div><b>Latitud:</b> {city.latitud}º</div>
             <div><b>Longitud:</b> {city.longitud}º</div>
             <div>
-            <b>Amanece:</b> {`${sunrise.getHours()}:${(sunrise.getMinutes()<10)? '0' + sunrise.getMinutes() : sunrise.getMinutes()} h`} UTC
+            <b>Amanece:</b> {`${(sunrise.getHours()<10)? '0' + sunrise.getHours() : sunrise.getHours()}:${(sunrise.getMinutes()<10)? '0' + sunrise.getMinutes() : sunrise.getMinutes()} h`} UTC
             </div>
             <div>
-            <b>Anochece:</b> {`${sunset.getHours()}:${(sunset.getMinutes()<10)? '0' + sunset.getMinutes() : sunset.getMinutes()} h`} UTC
+            <b>Anochece:</b> {`${(sunset.getHours()<10)? '0' + sunset.getHours() : sunset.getHours()}:${(sunset.getMinutes()<10)? '0' + sunset.getMinutes() : sunset.getMinutes()} h`} UTC
             </div>
             <div>
               <img

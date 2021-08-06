@@ -24,7 +24,7 @@ export default function Nav({onSearch}){
         <Link to = '/about'>
           <span className = 'navbar-brand'>Conóceme</span>
         </Link>
-        <div className = 'hola'>
+        <div>
           <SearchBar onSearch = {onSearch}/>
         </div>
       </nav>

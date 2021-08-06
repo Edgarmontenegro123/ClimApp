@@ -7,3 +7,6 @@
 hr{
   border-top: none !important
 }
+.navbar-brand:hover{
+  color: #F8B62C !important
+}
